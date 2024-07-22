@@ -13,7 +13,4 @@ This project was created to help students upload their resumes and provide recru
 ## Conclusion
 The backend for this project was fully developed, and the frontend development was started. Although the project could have been presented as a prototype for the app, some constraints prevented its completion. Despite this, the foundation laid by the backend work shows the potential for further development and completion.
 
-### Prerequisites
-- Python 3.x
-- Django
-- Any other dependencies you used
+
