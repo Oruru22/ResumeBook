@@ -1,0 +1,107 @@
+.html {
+    height: 100vh;
+    background-color: #f1eaea;
+}
+
+.navbar {
+    background-color: #f1eaea;
+    overflow: hidden;
+    border-bottom: 2px solid green;
+    box-shadow: 0 2px 4px -1px green; 
+    height: 10vh;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    float:left;
+    padding:2px 1px;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+}
+
+.centered {
+    text-align: center;
+    color: #000;
+    background-color: #f1eaea;
+    margin-bottom: 0px;
+    padding: 100px;
+}
+
+.navbar-buttons {
+    float: right;
+    padding: 10px;
+}
+
+.button {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #f1eaea;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #76787a;
+}
+
+.design-div {
+    background-color: #f1eaea;
+    height: 780px;
+    color: #000;
+}
+
+.Student-div {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Student-p {
+    width: 400px;
+}
+
+.StudentSignup {
+    display: grid;
+    align-items: center;
+    justify-content: center ;
+    padding: 10px;
+}
+
+.Recruiter-div {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Recruiter-p {
+    width: 400px;
+}
+
+.Recruiter-reg {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-p {
+    height: 10vh;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid green;
+    background-color: #f1eaea;
+    padding: 10px;
+}
+

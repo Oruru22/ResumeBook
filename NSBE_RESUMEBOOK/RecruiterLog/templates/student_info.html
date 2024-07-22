@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Information</title>
+    </head>
+    <body>
+        <h1>STUDENT INFORMATION</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>T-Number</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th>Classification</th>
+                    <th>Graduation Date</th>
+                    <th>Major</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                    <tr>
+                        <td>{{student.Tnumber}}</td>
+                        <td>{{student.LastName}}</td>
+                        <td>{{student.FirstName}}</td>
+                        <td>{{student.Email}}</td>
+                        <td>{{student.Classification}}</td>
+                        <td>{{student.Graduation_date}}</td>
+                        <td>{{student.Major}}</td>
+                        <td><a href="{% url 'RecruiterLog:download_student_resume' student.Tnumber %}">Download Resume</a></td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="8">No Student Information Available.</td>
+                    </tr>
+                {% endfor %}
+                <a href="{% url 'RecruiterLog:recruiter_logout'%}">Logout</a>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+                

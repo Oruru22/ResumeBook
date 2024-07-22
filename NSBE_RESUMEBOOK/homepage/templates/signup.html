@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #f1eaea;">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a><img src="{% static 'logos/nsbe_logo.png' %}" alt="NSBE LOGO"></a>
+                <a><img src="{% static 'logos/tsu_header.png'%}" alt="TSU LOGO"></a>
+            </div>
+            <div class="navbar-buttons">
+                <a href="{% url 'homepage:home' %}" class="button" style="border: 1px solid black">Home</a>
+                <a href="{% url 'homepage:login' %}" class="button" style="background-color: #008000; color:#f1eaea;">Login</a>
+            </div>
+        </nav>
+        <h1 style="background-color:#f1eaea; color:#000; margin-bottom: 0px; padding: 10px; text-align: center">Sign Up</h1>
+        <p style="text-align: center;"> Get your resume prepped, submit it and get hired!</p>
+        <div class="col-lg-12" style="background-color:#f1eaea; text-align: center">
+            <div class="row" style="height: 100vh;">
+                <div class="col-lg-12">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="button" style="background-color:#008000; color: #f1eaea">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
